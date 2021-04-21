@@ -4,8 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/assets
+/public/images
+/public/js
 # testing
 /coverage
+/public
+
 
 # production
 /build
