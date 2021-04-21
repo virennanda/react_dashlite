@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -6,16 +7,16 @@ const Navbar = () => {
       <div className="container-xl wide-xl">
         <div className="nk-header-wrap">
           <div className="nk-menu-trigger mr-sm-2 d-lg-none">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="nk-nav-toggle nk-quick-nav-icon"
               data-target="headerNav"
             >
               <em className="icon ni ni-menu"></em>
-            </a>
+            </Link>
           </div>
           <div className="nk-header-brand">
-            <a href="html/index.html" className="logo-link">
+            <Link to="/" className="logo-link">
               <img
                 className="logo-light logo-img"
                 src="./images/logo.png"
@@ -28,12 +29,12 @@ const Navbar = () => {
                 srcset="./images/logo-dark2x.png 2x"
                 alt="logo-dark"
               />
-            </a>
+            </Link>
           </div>
           <div className="nk-header-menu" data-content="headerNav">
             <div className="nk-header-mobile">
               <div className="nk-header-brand">
-                <a href="html/index.html" className="logo-link">
+                <Link to="/" className="logo-link">
                   <img
                     className="logo-light logo-img"
                     src="./images/logo.png"
@@ -46,46 +47,46 @@ const Navbar = () => {
                     srcset="./images/logo-dark2x.png 2x"
                     alt="logo-dark"
                   />
-                </a>
+                </Link>
               </div>
               <div className="nk-menu-trigger mr-n2">
-                <a
+                <Link
                   href="/"
-                  className="nk-nav-toggle nk-quick-nav-icon"
+                  clLinkssName="nk-nav-toggle nk-quick-nav-icon"
                   data-target="headerNav"
                 >
                   <em className="icon ni ni-arrow-left"></em>
-                </a>
+                </Link>
               </div>
             </div>
             <ul className="nk-menu nk-menu-main ui-s2">
               <li className="nk-menu-item has-sub">
-                <a href="/" className="nk-menu-link nk-menu-toggle">
+                <Link to="/" className="nk-menu-link nk-menu-toggle">
                   <span className="nk-menu-text">Dashboards</span>
-                </a>
+                </Link>
                 <ul className="nk-menu-sub">
                   <li className="nk-menu-item">
-                    <a href="html/index.html" className="nk-menu-link">
+                    <Link to="/" className="nk-menu-link">
                       <span className="nk-menu-text">Default Dashboard</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/index-sales.html" className="nk-menu-link">
+                    <Link to="/index-sales" className="nk-menu-link">
                       <span className="nk-menu-text">Sales Dashboard</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/index-crypto.html" className="nk-menu-link">
+                    <Link to="html/index-crypto.html" className="nk-menu-link">
                       <span className="nk-menu-text">Crypto Dashboard</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/index-analytics.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Analytics Dashboard</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-heading">
                     <h6 className="overline-title text-primary">
@@ -93,271 +94,271 @@ const Navbar = () => {
                     </h6>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/invest/index.html"
                       className="nk-menu-link"
                       target="_blank"
                     >
                       <span className="nk-menu-text">Investment Panel</span>
                       <span className="nk-menu-badge badge-danger">HOT</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nk-menu-item has-sub">
-                <a href="/" className="nk-menu-link nk-menu-toggle">
+                <Link to="/" className="nk-menu-link nk-menu-toggle">
                   <span className="nk-menu-text">Applications</span>
-                </a>
+                </Link>
                 <ul className="nk-menu-sub">
                   <li className="nk-menu-item">
-                    <a href="html/apps-messages.html" className="nk-menu-link">
+                    <Link to="html/apps-messages.html" className="nk-menu-link">
                       <span className="nk-menu-text">Messages</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/apps-inbox.html" className="nk-menu-link">
+                    <Link to="html/apps-inbox.html" className="nk-menu-link">
                       <span className="nk-menu-text">Inbox / Mail</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/apps-file-manager.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">File Manager</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/apps-chats.html" className="nk-menu-link">
+                    <Link to="html/apps-chats.html" className="nk-menu-link">
                       <span className="nk-menu-text">Chats / Messenger</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/apps-calendar.html" className="nk-menu-link">
+                    <Link to="html/apps-calendar.html" className="nk-menu-link">
                       <span className="nk-menu-text">Calendar</span>
                       <span className="nk-menu-badge badge-warning">New</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/apps-kanban.html" className="nk-menu-link">
+                    <Link to="html/apps-kanban.html" className="nk-menu-link">
                       <span className="nk-menu-text">Kanban Board</span>
                       <span className="nk-menu-badge badge-warning">New</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nk-menu-item has-sub">
-                <a href="/" className="nk-menu-link nk-menu-toggle">
+                <Link to="/" className="nk-menu-link nk-menu-toggle">
                   <span className="nk-menu-text">Pages</span>
-                </a>
+                </Link>
                 <ul className="nk-menu-sub">
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-icon">
                         <em className="icon ni ni-tile-thumb"></em>
                       </span>
                       <span className="nk-menu-text">Projects</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/project-card.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Project Cards</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/project-list.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Project List</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">User Manage</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/user-list-regular.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             User List - Regular
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/user-list-compact.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             User List - Compact
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/user-details-regular.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             User Details - Regular
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/user-profile-regular.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             User Profile - Regular
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a href="html/user-card.html" className="nk-menu-link">
+                        <Link to="html/user-card.html" className="nk-menu-link">
                           <span className="nk-menu-text">
                             User Contact - Card
                           </span>{" "}
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">AML / KYCs</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/kyc-list-regular.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             KYC List - Regular
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/kyc-details-regular.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             KYC Details - Regular
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Transactions</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/transaction-basic.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             Tranx List - Basic
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/transaction-crypto.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             Tranx List - Crypto
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-icon">
                         <em className="icon ni ni-file-docs"></em>
                       </span>
                       <span className="nk-menu-text">Invoice</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/invoice-list.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Invoice List</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/invoice-details.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Invoice Details</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/pages/regular-v1.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Regular Page - v1</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/pages/regular-v2.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Regular Page - v2</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/pages/faqs.html" className="nk-menu-link">
+                    <Link to="html/pages/faqs.html" className="nk-menu-link">
                       <span className="nk-menu-text">Faqs / Help</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nk-menu-item has-sub">
-                <a href="/" className="nk-menu-link nk-menu-toggle">
+                <Link to="/" className="nk-menu-link nk-menu-toggle">
                   <span className="nk-menu-text">Misc</span>
-                </a>
+                </Link>
                 <ul className="nk-menu-sub">
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Auth Pages</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/auths/auth-login.html"
                           className="nk-menu-link"
                           target="_blank"
                         >
                           <span className="nk-menu-text">Login / Signin</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/auths/auth-register.html"
                           className="nk-menu-link"
                           target="_blank"
@@ -365,19 +366,19 @@ const Navbar = () => {
                           <span className="nk-menu-text">
                             Register / Signup
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/auths/auth-reset.html"
                           className="nk-menu-link"
                           target="_blank"
                         >
                           <span className="nk-menu-text">Forgot Password</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/auths/auth-success.html"
                           className="nk-menu-link"
                           target="_blank"
@@ -385,17 +386,17 @@ const Navbar = () => {
                           <span className="nk-menu-text">
                             Success / Confirm
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item has-sub">
-                        <a href="/" className="nk-menu-link nk-menu-toggle">
+                        <Link to="/" className="nk-menu-link nk-menu-toggle">
                           <span className="nk-menu-text">
                             Classic Version - v2
                           </span>
-                        </a>
+                        </Link>
                         <ul className="nk-menu-sub">
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-login-v2.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -403,10 +404,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Login / Signin
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-register-v2.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -414,10 +415,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Register / Signup
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-reset-v2.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -425,10 +426,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Forgot Password
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-success-v2.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -436,19 +437,19 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Success / Confirm
                               </span>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="nk-menu-item has-sub">
-                        <a href="/" className="nk-menu-link nk-menu-toggle">
+                        <Link to="/" className="nk-menu-link nk-menu-toggle">
                           <span className="nk-menu-text">
                             No Slider Version - v3
                           </span>
-                        </a>
+                        </Link>
                         <ul className="nk-menu-sub">
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-login-v3.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -456,10 +457,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Login / Signin
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-register-v3.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -467,10 +468,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Register / Signup
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-reset-v3.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -478,10 +479,10 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Forgot Password
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="nk-menu-item">
-                            <a
+                            <Link
                               href="html/pages/auths/auth-success-v3.html"
                               className="nk-menu-link"
                               target="_blank"
@@ -489,98 +490,98 @@ const Navbar = () => {
                               <span className="nk-menu-text">
                                 Success / Confirm
                               </span>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Error Pages</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/errors/404-classNameic.html"
                           target="_blank"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">404 Classic</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/errors/504-classNameic.html"
                           target="_blank"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">504 Classic</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/errors/404-s1.html"
                           target="_blank"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">404 Modern</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/pages/errors/504-s1.html"
                           target="_blank"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">504 Modern</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item">
-                    <a href="html/_blank.html" className="nk-menu-link">
+                    <Link to="html/_blank.html" className="nk-menu-link">
                       <span className="nk-menu-text">Blank / Startup</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/pages/terms-policy.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Terms / Policy</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nk-menu-item has-sub">
-                <a href="/" className="nk-menu-link nk-menu-toggle">
+                <Link to="/" className="nk-menu-link nk-menu-toggle">
                   <span className="nk-menu-text">Components</span>
-                </a>
+                </Link>
                 <ul className="nk-menu-sub">
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Ui Elements</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/alerts.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Alerts</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/accordions.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Accordions</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/avatar.html"
                           className="nk-menu-link"
                         >
@@ -588,58 +589,58 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/badges.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Badges</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/buttons.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Buttons</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/buttons-group.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Button Group</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/breadcrumb.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Breadcrumb</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/cards.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Cards</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/carousel.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Carousel</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/list-dropdown.html"
                           className="nk-menu-link"
                         >
@@ -647,50 +648,50 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/modals.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Modals</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/pagination.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Pagination</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/popover.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Popovers</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/progress.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Progress</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/spinner.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Spinner</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/tabs.html"
                           className="nk-menu-link"
                         >
@@ -698,195 +699,195 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             Updated
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/toast.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Toasts</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/tooltip.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Tooltip</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/typography.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Typography</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Utilities</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-border.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Border</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-colors.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Colors</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-display.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Display</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-embeded.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Embeded</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-flex.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Flex</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-text.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Text</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-sizing.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Sizing</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-spacing.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Spacing</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/elements/util-others.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Others</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Crafted Icons</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/svg-icons.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             SVG Icon - Exclusive
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/nioicon.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">
                             Nioicon - HandCrafted
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/components/misc/icons.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Icon Libraries</span>
                       <span className="nk-menu-badge badge-warning">New</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Tables</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/tables/table-basic.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Basic Tables</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/tables/table-special.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Special Tables</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/tables/table-datatable.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">DataTables</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Forms</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-elements.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Form Elements</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-upload.html"
                           className="nk-menu-link"
                         >
@@ -894,10 +895,10 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/datetime-picker.html"
                           className="nk-menu-link"
                         >
@@ -907,10 +908,10 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/number-spinner.html"
                           className="nk-menu-link"
                         >
@@ -918,31 +919,31 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-layouts.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Form Layouts</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-validation.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Form Validation</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-wizard.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Wizard Basic</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-heading">
                         <h6 className="overline-title text-primary">
@@ -950,77 +951,77 @@ const Navbar = () => {
                         </h6>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-summernote.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Summernote</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-quill.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Quill</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/forms/form-tinymce.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Tinymce</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Charts</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/charts/chartjs.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Chart JS</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/charts/knob.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Knob JS</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item has-sub">
-                    <a href="/" className="nk-menu-link nk-menu-toggle">
+                    <Link to="/" className="nk-menu-link nk-menu-toggle">
                       <span className="nk-menu-text">Miscellaneous</span>
-                    </a>
+                    </Link>
                     <ul className="nk-menu-sub">
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/toastr.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Toastr</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/sweet-alert.html"
                           className="nk-menu-link"
                         >
                           <span className="nk-menu-text">Sweet Alert</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/js-tree.html"
                           className="nk-menu-link"
                         >
@@ -1028,10 +1029,10 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nk-menu-item">
-                        <a
+                        <Link
                           href="html/components/misc/dual-listbox.html"
                           className="nk-menu-link"
                         >
@@ -1039,17 +1040,17 @@ const Navbar = () => {
                           <span className="nk-menu-badge badge-warning">
                             New
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nk-menu-item">
-                    <a
+                    <Link
                       href="html/email-templates.html"
                       className="nk-menu-link"
                     >
                       <span className="nk-menu-text">Email Template</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -1058,7 +1059,7 @@ const Navbar = () => {
           <div className="nk-header-tools">
             <ul className="nk-quick-nav">
               <li className="dropdown notification-dropdown">
-                <a
+                <Link
                   href="/"
                   className="dropdown-toggle nk-quick-nav-icon"
                   data-toggle="dropdown"
@@ -1066,13 +1067,13 @@ const Navbar = () => {
                   <div className="icon-status icon-status-info">
                     <em className="icon ni ni-bell"></em>
                   </div>
-                </a>
+                </Link>
                 <div className="dropdown-menu dropdown-menu-xl dropdown-menu-right dropdown-menu-s1">
                   <div className="dropdown-head">
                     <span className="sub-title nk-dropdown-title">
                       Notifications
                     </span>
-                    <a href="/">Mark All as Read</a>
+                    <Link to="/">Mark All as Read</Link>
                   </div>
                   <div className="dropdown-body">
                     <div className="nk-notification">
@@ -1145,12 +1146,12 @@ const Navbar = () => {
                     </div>
                   </div>
                   <div className="dropdown-foot center">
-                    <a href="/">View All</a>
+                    <Link to="/">View All</Link>
                   </div>
                 </div>
               </li>
               <li className="dropdown user-dropdown order-sm-first">
-                <a href="/" className="dropdown-toggle" data-toggle="dropdown">
+                <Link to="/" className="dropdown-toggle" data-toggle="dropdown">
                   <div className="user-toggle">
                     <div className="user-avatar sm">
                       <em className="icon ni ni-user-alt"></em>
@@ -1162,7 +1163,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
                 <div className="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1 is-light">
                   <div className="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
                     <div className="user-card">
@@ -1174,12 +1175,12 @@ const Navbar = () => {
                         <span className="sub-text">info@softnio.com</span>
                       </div>
                       <div className="user-action">
-                        <a
+                        <Link
                           className="btn btn-icon mr-n2"
                           href="html/invest/profile-setting.html"
                         >
                           <em className="icon ni ni-setting"></em>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1196,46 +1197,46 @@ const Navbar = () => {
                         <span className="currency currency-usd">USD</span>
                       </span>
                     </div>
-                    <a href="/" className="link">
+                    <Link to="/" className="link">
                       <span>Withdraw Balance</span>{" "}
                       <em className="icon ni ni-wallet-out"></em>
-                    </a>
+                    </Link>
                   </div>
                   <div className="dropdown-inner">
                     <ul className="link-list">
                       <li>
-                        <a href="html/invest/profile.html">
+                        <Link to="html/invest/profile.html">
                           <em className="icon ni ni-user-alt"></em>
                           <span>View Profile</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="html/invest/profile-setting.html">
+                        <Link to="html/invest/profile-setting.html">
                           <em className="icon ni ni-setting-alt"></em>
                           <span>Account Setting</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="html/invest/profile-activity.html">
+                        <Link to="html/invest/profile-activity.html">
                           <em className="icon ni ni-activity-alt"></em>
                           <span>Login Activity</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dark-mode-switch" href="/">
+                        <Link className="dark-mode-switch" href="/">
                           <em className="icon ni ni-moon"></em>
                           <span>Dark Mode</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="dropdown-inner">
                     <ul className="link-list">
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <em className="icon ni ni-signout"></em>
                           <span>Sign out</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

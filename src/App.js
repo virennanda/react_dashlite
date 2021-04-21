@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect, Route, Switch } from 'react-router';
 import Footer from './components/common/footer';
 import Navbar from './components/navbar';
 import Dashboard from './pages/dashboard';
@@ -24,8 +25,11 @@ class App extends Component {
         <div className="nk-app-root">
           <div className="nk-wrap ">
             <Navbar />
-            {/* <Dashboard /> */}
-            <IndexSales />
+            <Switch>
+              <Route exact path="/" component={Dashboard} />
+              <Route exact path="/index-sales" component={IndexSales} />
+              <Redirect to="/" />
+            </Switch>
             <Footer />
           </div>
         </div>
